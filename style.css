@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #f0f0f0;
+  
 }
 
 .container {
@@ -24,10 +25,11 @@ body {
 /* Header styles */
 
 header {
-  background-color: #fff;
+  background-color: orangered;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
+  padding: 10px;
 }
 
 header .container {
@@ -35,31 +37,21 @@ header .container {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #222;
+  margin-left: 20px;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
+  margin-left: 30px;
 }
 
 header nav li {
-  margin-right: 20px;
-}
-
-header nav li:last-child {
-  margin-right: 0;
+  margin-right: 50px;
 }
 
 header nav a {
-  color: #222;
+  color: white;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   padding: 10px;
@@ -74,11 +66,14 @@ header nav a:hover {
 header .contact-info {
   display: flex;
   align-items: center;
+  
 }
 
-header .contact-info p {
-  margin-right: 20px;
+.hero a {
+font-size: 30px;
+color: red;
 }
+
 
 header .cta {
   background-color: #222;
@@ -94,26 +89,31 @@ header .cta {
 
 header .cta:hover {
   background-color: #fff;
-  color: #222;
+  color: white;
   border: 2px solid #222;
+}
+
+.container h2{
+color: orangered;
 }
 
 /* Main content styles */
 
 .hero {
-  height: 500px;
-  background-image: url('hero.jpg');
+  height: 600px;
+  
+  background-image: url(/gym-homepage/hero.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: orangered;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 80px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -144,4 +144,136 @@ header .cta:hover {
 }
 
 .testimonial {
-  background-color
+  background-color:rgba(0, 0, 0, 0.1)
+}
+
+footer .container {
+    background-color: orangered;
+    max-width: 1200px;  
+
+}
+
+
+footer .footer-links {
+    list-style: none;
+    display: block;
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    margin-left: 0px;
+    text-align: centres;
+    
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    text-align: centre;
+    
+  }
+
+/* Homepage fonts setting */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+  h4 {
+    font-size: 0.5rem;
+  }
+  
+  h5 {
+    font-size: 0.5rem;
+  }
+  
+  h6 {
+    font-size: 0.25rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+/***************************************************/
+/* Sidebar */
+
+.sidebar {
+    background-color: #f7f7f7;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .sidebar-header button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .sidebar-links {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  
+  .sidebar-links ul {
+    list-style: none;
+  }
+  
+  .sidebar-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-links a {
+    color: #333;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .social-media ul  {
+    width: 100px;
+    margin-left: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
